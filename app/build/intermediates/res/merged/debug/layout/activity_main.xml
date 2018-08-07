@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context="com.example.manhdat.gamecaroend.MainActivity">
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="250dp"
+        android:layout_height="80dp"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/play"
+        android:layout_above="@+id/imgAmthanh"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:id="@+id/imgAmthanh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/btnPlay"
+        android:layout_marginBottom="21dp"
+        android:layout_marginStart="40dp"
+        app:srcCompat="@drawable/soundon" />
+
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/quit"
+        android:layout_alignTop="@+id/imgAmthanh"
+        android:layout_toEndOf="@+id/imgAmthanh"
+        android:layout_marginStart="42dp" />
+
+</RelativeLayout>
